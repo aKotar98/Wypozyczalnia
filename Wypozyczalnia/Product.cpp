@@ -21,6 +21,9 @@ void Product::Add(int count) {
 	}
 	else id = 1;
 
+	fflush;
+	std::cin.get();
+
 	std::cout << "Podaj marke:";
 	getline(std::cin, name);
 	std::cout << "\n";

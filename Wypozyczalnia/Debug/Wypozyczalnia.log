@@ -1,8 +1,7 @@
-﻿  BaseClass.cpp
-  Client.cpp
-  Product.cpp
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(43): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(57): warning C4551: wywołaniu funkcji brakuje listy argumentów
+﻿  Product.cpp
+c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(24): warning C4551: wywołaniu funkcji brakuje listy argumentów
+c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(46): warning C4551: wywołaniu funkcji brakuje listy argumentów
+c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(60): warning C4551: wywołaniu funkcji brakuje listy argumentów
   Wypozyczalnia.cpp
 c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\wypozyczalnia.cpp(55): warning C4101: "imie": lokalna zmienna, do której nie istnieje odwołanie
   Generowanie kodu...
