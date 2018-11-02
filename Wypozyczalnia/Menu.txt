@@ -1,0 +1,20 @@
+**********************************************************************************************************
+*                                            Wypozyczalnia Sprzetu                                       *
+*   Wybierz, aby kontynuowac :                                                                           *
+* [1] Dodaj Klienta                                                                                      *
+* [2] Znajdz Klienta w bazie                                                                             *
+* [3] Usun klienta z bazy                                                                                *
+* [4] Wyswietl wszystkich klientow                                                                       *
+* [5] Dodaj produkt                                                                                      *
+* [6] Usun Produkt                                                                                       *
+* [7] Wyswietl wszystkie produkty                                                                        *
+* [8] Znajdz Produkt                                                                                     *
+* [9] Sprawdz karte klienta                                                                              *
+* [10] Wypozycz produkt                                                                                  *
+* [11] Zakoncz dzialanie programu                                                                        *
+*                                                                                                        *
+*                                                                                                        *
+**********************************************************************************************************
+
+
+Podaj odpowiedz z odpowiedniego zakresu[1-11]: 
