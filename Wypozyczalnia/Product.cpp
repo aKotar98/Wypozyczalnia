@@ -10,3 +10,8 @@ Product::Product()
 Product::~Product()
 {
 }
+/*
+void Product::Add() {
+
+}
+*/

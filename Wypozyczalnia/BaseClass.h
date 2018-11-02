@@ -8,7 +8,7 @@ class BaseClass
 public:
 	BaseClass();
 	~BaseClass();
-	void Add();
+	void Add(std::string nameoffile);
 	void Delete();
 	void Show();
 	void Find();

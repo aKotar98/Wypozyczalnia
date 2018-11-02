@@ -26,7 +26,7 @@ void Menu::ShowMenu() {
 			if (feof(file)) break; /*jeœli koniec pliku koniec dzia³ania*/
 			fscanf(file, "%c", &z);
 			printf(" %c", z);
-			Sleep(5);
+			Sleep(1);
 		}
 		std::cout << "\n";
 	}

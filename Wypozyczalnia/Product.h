@@ -10,5 +10,7 @@ class Product :	public BaseClass
 public:
 	Product();
 	~Product();
+	//void Add();
+
 };
 
