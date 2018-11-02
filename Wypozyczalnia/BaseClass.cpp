@@ -12,20 +12,22 @@ BaseClass::BaseClass()
 BaseClass::~BaseClass()
 {
 }
-void BaseClass::Add(std::string nameoffile) {
+int BaseClass::CountLine(std::string nameoffile) {
 
 
 	std::fstream file(nameoffile);
+	int count = 0;
 	if (file.is_open()) {
 		std::string line;
-		int count = 0;
-		while (!file.eof()) {
+
+		while (!file.eof()) 
+		{
 			getline(file, line);
 			count++;
 		}
 		file.close();
-		std::cout << count;
 		
-	}
 	
+	}
+	return count;
 }

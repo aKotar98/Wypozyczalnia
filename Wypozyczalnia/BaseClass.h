@@ -2,13 +2,14 @@
 #include <iostream>
 
 class BaseClass
-{private:
+{protected:
 	unsigned int id;
-	std::string name, name2;
+	std::string name2;
+	std::string name;
 public:
 	BaseClass();
 	~BaseClass();
-	void Add(std::string nameoffile);
+	int CountLine(std::string nameoffile);
 	void Delete();
 	void Show();
 	void Find();

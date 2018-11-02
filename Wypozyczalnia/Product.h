@@ -10,7 +10,8 @@ class Product :	public BaseClass
 public:
 	Product();
 	~Product();
-	//void Add();
+	void Add(int count);
+	void Upload_to_File(std::string nameoffile);
 
 };
 
