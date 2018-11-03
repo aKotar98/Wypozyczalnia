@@ -9,9 +9,9 @@ class BaseClass
 public:
 	BaseClass();
 	~BaseClass();
+	bool check_string(std::string chstring);
 	int CountLine(std::string nameoffile);
 	void Delete();
-	void Show();
-	void Find();
+	void Find(std::string nameoffile);
 };
 

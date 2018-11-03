@@ -21,5 +21,7 @@ private:
 public:
 	Client();
 	~Client();
+	void AddClient(int count);
+	void Upload_to_File(std::string nameoffile);
 };
 
