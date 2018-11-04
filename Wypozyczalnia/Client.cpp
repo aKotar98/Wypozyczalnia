@@ -112,6 +112,72 @@ void Client::Upload_to_File(std::string nameoffile)
 }
 
 
+
+
+void Client::Find(std::string nameoffile) {
+
+	int id;
+	std::string line;
+	bool check = true;
+
+	std::cout << "Wprowadz ID:";
+	while (!(std::cin >> id))
+	{
+		std::cout << "ID has to be a number:";
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	}
+	fflush;
+	std::cin.get();
+	std::cout << "\n";
+	system("cls");
+	std::fstream file(nameoffile);
+
+	if (file.good() == true)
+	{
+
+		while (getline(file, line))
+		{
+			int helper = atoi(line.c_str());
+
+			if ((id == helper))
+			{
+				std::cout << "Uzytkownik w bazie:\n";
+				id = helper;
+
+				getline(file, line);
+				name = line;
+				getline(file, line);
+				name2 = line;
+				getline(file, line);
+				city = line;
+				getline(file, line);
+				day = atoi(line.c_str());
+				getline(file, line);
+				month = atoi(line.c_str());
+				getline(file, line);
+				year = atoi(line.c_str());
+			
+				
+				std::cout << "  Id: " << id << "\n  Imie: " << name << "\n  Nazwisko: " << name2 << "\n  Miasto: " << city << "\n  Data urodzin: " << day << "." << month << "." << year << "\n";
+				check = false;
+				break;
+
+			}
+		}
+		if (check == true)
+			std::cout << "Brak uzytkownika w bazie.\n";
+	}
+	else
+	{
+		std::cout << "Cannot open the file.\n";
+	}
+	file.close();
+
+	system("pause");
+}
+
+
 /*WROC DO TEGO W WOLNEJ CHWILI !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 Date::Date(int day, int month, int year):day(day),month(month),year(year)
 {

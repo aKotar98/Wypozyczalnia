@@ -4,6 +4,7 @@
 #include <fstream>
 #include <string>
 
+
 BaseClass::BaseClass()
 {
 }
@@ -51,43 +52,7 @@ bool BaseClass::check_string(std::string chstring)
 }
 
 
-void BaseClass::Find(std::string nameoffile) {
-
-	int id;
-	std::string line;
-	bool check = true;
-
-	std::cout << "Wprowadz ID:";
-	while (!(std::cin >> id))
-	{
-		std::cout << "Price has to be a number:";
-		std::cin.clear();
-		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-	}
-	fflush;
-	std::cin.get();
-	std::cout << "\n";
-
-	std::fstream file(nameoffile);
-
-	if (file.good() == true)
-	{
-		while (getline(file, line))
-		{
-			int helper = atoi(line.c_str());
-			
-			if ((id == helper))
-			{
-				std::cout << "W bazie.\n";
-				check = false;
-				break;
-			}
-		}
-		if (check == true)
-			std::cout << ".\n";
-	}
-	else
-	{
-		std::cout << "Cannot open the file.\n";
-	}
+int  BaseClass::GetId() {
+	return id;
 }
+
