@@ -26,3 +26,17 @@ typ3
 54
 Dostepny
 2009
+5
+opel
+vectra
+samochod
+134
+Dostepny
+2017
+6
+Opel
+Vectra
+samochod
+121
+Dostepny
+2000

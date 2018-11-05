@@ -1,18 +1,7 @@
-﻿  Client.cpp
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(26): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(34): warning C4129: "P": nierozpoznany znak sekwencji ucieczki
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(43): warning C4129: "P": nierozpoznany znak sekwencji ucieczki
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(53): warning C4129: "P": nierozpoznany znak sekwencji ucieczki
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(66): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(79): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(90): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(130): warning C4551: wywołaniu funkcji brakuje listy argumentów
-  Product.cpp
+﻿  Product.cpp
 c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(24): warning C4551: wywołaniu funkcji brakuje listy argumentów
 c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(46): warning C4551: wywołaniu funkcji brakuje listy argumentów
 c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(60): warning C4551: wywołaniu funkcji brakuje listy argumentów
 c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(102): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(127): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-  Wypozyczalnia.cpp
-  Generowanie kodu...
+c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(133): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
   Wypozyczalnia.vcxproj -> C:\Users\kotar\source\repos\Wypozyczalnia\Debug\Wypozyczalnia.exe

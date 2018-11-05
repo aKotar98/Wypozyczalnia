@@ -21,9 +21,11 @@ private:
 public:
 	Client();
 	~Client();
-	void Showobj();
+	void ShowObj();
 	void AddClient(int count);
 	void Upload_to_File(std::string nameoffile);
-	void Find(std::string nameoffile);
+	bool Find(std::string nameoffile);
+	void ChangeDate();
+	void SetInTheFile();
 };
 

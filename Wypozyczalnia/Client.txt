@@ -33,3 +33,17 @@ Gliwice
 5
 11
 2000
+6
+Andrzej
+Musztra
+Warszawa
+13
+9
+1998
+7
+Adam
+Mardoczko
+Gliwice
+12
+11
+1997

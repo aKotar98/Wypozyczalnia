@@ -86,11 +86,11 @@ void Product::Upload_to_File(std::string nameoffile) {
 
 
 
-void Product::Find(std::string nameoffile) {
+bool Product::Find(std::string nameoffile) {
 
 	int id1;
 	std::string line;
-	bool check = true;
+	bool check = false;
 
 	std::cout << "Wprowadz ID:";
 	while (!(std::cin >> id1))
@@ -105,53 +105,60 @@ void Product::Find(std::string nameoffile) {
 	system("cls");
 	std::fstream file(nameoffile);
 
-	if (file.good() == true)
-	{
-
-		while (getline(file, line))
-		{
-			int helper = atoi(line.c_str());
-
-			if ((id1 == helper))
-			{
-				std::cout << "Uzytkownik w bazie:\n";
-				id = helper;
-
-				getline(file, line);
-				name = line;
-				getline(file, line);
-				name2 = line;
-				getline(file, line);
-				type = line;
-				getline(file, line);
-				PricepD = atof(line.c_str());
-				getline(file, line);
-				//accessability
-				if (line == "Dostepny")
-					accessibility = true;
-				else accessibility = false;
-				getline(file, line);
-				YearP = atoi(line.c_str());
-
-				std::cout << "  Id: " << id << "\n  Marka: " << name << "\n  Model: " << name2 << "\n  Typ: " << type << "\n  Cena za dzien: " << PricepD << "\n";
-				if (accessibility = true)
-					std::cout << "  Stan w magazynie: Dostepny\n";
-				else std::cout << "Stan w magazynie: Niedostepny\n";
-				std::cout << "  Rok produkcji: " << YearP;
-
-				check = false;
-				break;
-
-			}
-		}
-		if (check == true)
-			std::cout << "Brak uzytkownika w bazie.\n";
-	}
-	else
+	if (file.good() == false)
 	{
 		std::cout << "Cannot open the file.\n";
+		exit(0);
 	}
+
+	while (getline(file, line))
+	{
+		int helper = atoi(line.c_str());
+
+		if ((id1 == helper))
+		{
+
+			id = helper;
+
+			getline(file, line);
+			name = line;
+
+			getline(file, line);
+			name2 = line;
+
+			getline(file, line);
+			type = line;
+
+			getline(file, line);
+			PricepD = atof(line.c_str());
+			getline(file, line);
+
+			//accessability
+			if (line == "Dostepny")
+				accessibility = true;
+			else accessibility = false;
+
+			getline(file, line);
+			YearP = atoi(line.c_str());
+
+			check = true;
+			break;
+
+		}
+			for (int i = 0; i < 6; i++) {
+				getline(file, line);
+			}
+	}
+	
 	file.close();
-	system("pause");
+	
+	return check;
 }
 
+void Product::ShowObj() {
+	std::cout << "\n  Id: " << id << "\n  Marka: " << name << "\n  Model: " << name2 << "\n  Typ: " << type << "\n  Cena za dzien: " << PricepD << "\n";
+	if (accessibility = true)
+		std::cout << "  Stan w magazynie: Dostepny\n";
+	else std::cout << "Stan w magazynie: Niedostepny\n";
+	std::cout << "  Rok produkcji: " << YearP<<"\n";
+}

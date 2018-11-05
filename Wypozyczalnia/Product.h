@@ -10,8 +10,8 @@ class Product :	public BaseClass
 public:
 	Product();
 	~Product();
-	void Showobj();
-	void Find(std::string nameoffile);
+	void ShowObj();
+	bool Find(std::string nameoffile);
 	void Add(int count);
 	void Upload_to_File(std::string nameoffile);
 
