@@ -1,13 +1,2 @@
-﻿  Client.cpp
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(26): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(34): warning C4129: "P": nierozpoznany znak sekwencji ucieczki
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(43): warning C4129: "P": nierozpoznany znak sekwencji ucieczki
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(53): warning C4129: "P": nierozpoznany znak sekwencji ucieczki
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(66): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(79): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(90): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(130): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(164): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
-  Wypozyczalnia.cpp
-  Generowanie kodu...
+﻿  Wypozyczalnia.cpp
   Wypozyczalnia.vcxproj -> C:\Users\kotar\source\repos\Wypozyczalnia\Debug\Wypozyczalnia.exe

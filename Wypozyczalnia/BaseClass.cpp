@@ -4,12 +4,13 @@
 #include <fstream>
 #include <string>
 
-
 BaseClass::BaseClass()
 {
 }
 
-
+BaseClass::BaseClass(int idd, std::string namee, std::string namee2):id(idd),name(namee),name2(namee2)
+{
+}
 BaseClass::~BaseClass()
 {
 }
@@ -56,3 +57,6 @@ int  BaseClass::GetId() {
 	return id;
 }
 
+void BaseClass::autoid() {
+	id--;
+}

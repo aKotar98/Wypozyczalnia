@@ -7,7 +7,9 @@
 Product::Product()
 {
 }
-
+Product::Product(int idd, std::string namee,std::string namee2, std::string typee, float pricee, bool access, int yearr):BaseClass(idd,namee,namee2),PricepD(pricee),accessibility(access),YearP(yearr)
+{
+}
 
 Product::~Product()
 {
