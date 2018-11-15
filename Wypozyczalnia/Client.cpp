@@ -132,10 +132,11 @@ bool Client::Find(std::string nameoffile) {
 	std::cout << "\n";
 	system("cls");
 	std::fstream file(nameoffile);
+	//file.open(nameoffile, std::ios::in);
 
 	if (file.good() == false)
 	{
-		std::cout << "Cannot open the file.\n";
+		std::cout << "Cannot open the file FIND.\n";
 		exit(0);
 	}
 		
@@ -160,7 +161,7 @@ bool Client::Find(std::string nameoffile) {
 				day = atoi(line.c_str());
 				
 				getline(file, line);
-				month = atoi(line.c_str());
+				month = atof(line.c_str());
 				
 				getline(file, line);
 				year = atoi(line.c_str());
@@ -181,7 +182,53 @@ void Client::ShowObj()
 	std::cout << "  Id: " << id << "\n  Imie: " << name << "\n  Nazwisko: " << name2 << "\n  Miasto: " << city << "\n  Data urodzin: " << day << "." << month << "." << year << "\n";
 }
 
+void Client::SaveTable(std::ifstream &file) {
+	
+	
+	int counter = 0;
+	
+	std::string line;
+	
 
+	if (file.good() == false)
+	{
+		std::cout << "Cannot open the file xxx.\n";
+		exit(0);
+	}
+
+	while (getline(file, line))
+	{
+
+		std::cout << line;
+			
+			//if(counter==0)
+			//	id = atoi(line.c_str());
+	
+			if (counter == 1)
+			name = line;
+
+			if (counter == 2)
+			name2 = line;
+
+			if (counter == 3)
+			city = line;
+
+			//if (counter == 4)
+			//day = atoi(line.c_str());
+
+			//if (counter == 5)
+			//month = atof(line.c_str());
+
+		//	if (counter == 6)
+		//	year = atoi(line.c_str());
+			
+			if(counter == 7)
+			break;
+
+			counter++;
+		}
+
+}
 
 
 /*

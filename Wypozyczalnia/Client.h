@@ -25,7 +25,7 @@ public:
 	void AddClient(int count);
 	void Upload_to_File(std::string nameoffile);
 	bool Find(std::string nameoffile);
-	void ChangeDate();
+	void SaveTable(std::ifstream &file);
 	void SetInTheFile();
 };
 
