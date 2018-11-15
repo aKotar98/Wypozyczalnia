@@ -9,7 +9,7 @@
 * [6] Usun Produkt                                                                                       *
 * [7] Wyswietl wszystkie produkty                                                                        *
 * [8] Znajdz Produkt                                                                                     *
-* [9] Sprawdz karte klienta                                                                              *
+* [9] Sprawdz wypozyczenia                                                                             *
 * [10] Wypozycz produkt                                                                                  *
 * [11] Zakoncz dzialanie programu                                                                        *
 *                                                                                                        *

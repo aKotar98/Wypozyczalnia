@@ -4,7 +4,7 @@
 
 class Client : public BaseClass
 {
-public:
+private:
 	std::string city;
 	int day, month, year;
 

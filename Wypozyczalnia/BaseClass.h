@@ -13,7 +13,6 @@ public:
 	bool check_string(std::string chstring);
 	void autoid();
 	int CountLine(std::string nameoffile);
-	void Delete(int id,std::string nameoffile);
 	int GetId();
 };
 
