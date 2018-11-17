@@ -9,6 +9,7 @@ class Product :	public BaseClass
 
 public:
 	Product();
+	Product(int idd);
 	Product(int idd, std::string namee, std::string namee2, std::string typee, float pricee, bool access, int yearr);
 	~Product();
 	void ShowObj();

@@ -198,6 +198,35 @@ void Client::SaveTable(std::fstream &file) {
 	
 }
 
+Client::Client(int idd) :BaseClass(){
+	id = idd;
+	int helper = 1;
+	std::string line;
+	if (id > 1)
+		helper = ((id - 1) * 7)+1;
+	std::fstream file("Client.txt");
+
+	if (file.good() == false)
+	{
+		std::cout << "Cannot open the file.\n";
+		exit(0);
+	}
+
+	
+		for (int i = 0; i < helper; i++) {
+			getline(file, line);
+		}
+	
+		file >> name;
+		file >> name2;
+		file >> city;
+		file >> day;
+		file >> month;
+		file >> year;
+
+	file.close();
+
+}
 
 /*
 void Client::ChangeDate() 

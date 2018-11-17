@@ -5,7 +5,7 @@
 #include <string>
 
 
-Matches::Matches(std::string nameoffile, int productIdd, int clientIdd):productId(productIdd),clientid(clientIdd)
+Matches::Matches(std::string nameoffile, int productIdd, int clientIdd,int dayy, int monthh, int yearr):productId(productIdd),clientid(clientIdd),day(dayy),month(monthh),year(yearr)
 {
 
 	std::fstream file(nameoffile);
@@ -26,6 +26,10 @@ Matches::Matches(std::string nameoffile, int productIdd, int clientIdd):productI
 	else matchesId = 1;
 }
 
+Matches::Matches() {
+
+}
+
 void Matches::Upload_to_File(std::string nameoffile) {
 	std::fstream file(nameoffile, std::ios::app);
 	if (file.good() == true)
@@ -33,6 +37,9 @@ void Matches::Upload_to_File(std::string nameoffile) {
 		file << matchesId << "\n";
 		file << clientid << "\n";
 		file << productId << "\n";
+		file << day << "\n";
+		file << month << "\n";
+		file << year << "\n";
 	
 
 		file.close();
@@ -74,10 +81,16 @@ bool Matches::Find(std::string nameoffile) {
 			clientid = atoi(line.c_str());
 			getline(file, line);
 			productId = atoi(line.c_str());
+			getline(file, line);
+			day = atoi(line.c_str());
+			getline(file, line);
+			month = atoi(line.c_str());
+			getline(file, line);
+			year = atoi(line.c_str());
 			check = true;
 			break;
 		}
-		for (int i = 0; i < 2; i++) {
+		for (int i = 0; i < 5; i++) {
 			getline(file, line);
 		}
 	}
@@ -96,6 +109,15 @@ int Matches::GetmatchesId(){
 	return matchesId;
 }
 
+int Matches::Getmatchesday() {
+	return day;
+}
 int Matches::GetproductId() {
 	return productId;
+}
+int Matches::Getmatchesmonth() {
+	return month;
+}
+int Matches::Getmatchesyear() {
+	return year;
 }

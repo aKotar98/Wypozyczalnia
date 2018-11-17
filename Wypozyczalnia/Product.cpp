@@ -11,6 +11,38 @@ Product::Product(int idd, std::string namee,std::string namee2, std::string type
 {
 }
 
+Product::Product(int idd) : BaseClass() {
+	id = idd;
+	int helper = 1;
+	std::string line,s1;
+	if (id > 1)
+		helper = ((id - 1) * 7) + 1;
+	std::fstream file("Product.txt");
+
+	if (file.good() == false)
+	{
+		std::cout << "Cannot open the file.\n";
+		exit(0);
+	}
+
+
+	for (int i = 0; i < helper; i++) {
+		getline(file, line);
+	}
+
+	file >> name;
+	file >> name2;
+	file >> type;
+	file >> PricepD;
+	file >> s1;
+	if (s1 == "Dostepny")
+		accessibility = true;
+	else accessibility = false;
+	file >> YearP;
+
+	file.close();
+
+}
 Product::~Product()
 {
 	

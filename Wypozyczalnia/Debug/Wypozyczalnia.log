@@ -1,22 +1,3 @@
-﻿  BaseClass.cpp
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\baseclass.cpp(42): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-  Client.cpp
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(28): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(36): warning C4129: "P": nierozpoznany znak sekwencji ucieczki
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(45): warning C4129: "P": nierozpoznany znak sekwencji ucieczki
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(55): warning C4129: "P": nierozpoznany znak sekwencji ucieczki
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(68): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(81): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(92): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(132): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\client.cpp(165): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
-  Matches.cpp
-  Product.cpp
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(26): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(48): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(62): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(104): warning C4551: wywołaniu funkcji brakuje listy argumentów
-c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\product.cpp(135): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-  Wypozyczalnia.cpp
-  Generowanie kodu...
+﻿  Matches.cpp
+c:\users\kotar\source\repos\wypozyczalnia\wypozyczalnia\matches.cpp(61): warning C4551: wywołaniu funkcji brakuje listy argumentów
   Wypozyczalnia.vcxproj -> C:\Users\kotar\source\repos\Wypozyczalnia\Debug\Wypozyczalnia.exe

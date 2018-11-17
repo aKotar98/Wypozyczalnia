@@ -10,6 +10,7 @@ private:
 
 public:
 	Client();
+	Client(int idd);
 	Client(int idd, std::string namee, std::string namee2, std::string cityy, int dayy, int monthh, int yearr);
 	~Client();
 	void ShowObj();
